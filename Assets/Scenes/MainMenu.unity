@@ -322,7 +322,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7460046300004610927, guid: 724e79479548b1b4eba4ee49aeeee4aa, type: 3}
+  m_Sprite: {fileID: 6054277451648750542, guid: 724e79479548b1b4eba4ee49aeeee4aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 995114708}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
