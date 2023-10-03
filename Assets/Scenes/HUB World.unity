@@ -923,7 +923,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!61 &856181665
 BoxCollider2D:
@@ -957,7 +957,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3915372, y: 0.16954589}
+  m_Offset: {x: 0.3915372, y: 0.18312842}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -968,7 +968,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1023002, y: 3.3503933}
+  m_Size: {x: 3.1023002, y: 3.3232284}
   m_EdgeRadius: 0
 --- !u!114 &856181666
 MonoBehaviour:
@@ -2897,7 +2897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1342034701}
   m_Layer: 0
-  m_Name: Design
+  m_Name: Assets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3471,7 +3471,7 @@ GameObject:
   - component: {fileID: 1546239583}
   - component: {fileID: 1546239584}
   m_Layer: 0
-  m_Name: Background4
+  m_Name: Cloud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
