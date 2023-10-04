@@ -2,7 +2,7 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
         // wall jump
         if (wallJumpCooldown > 0.2f)
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
                 Jump();
 
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
             else
                 body.gravityScale = 7;
             
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.W))
                 Jump();
         }
         else wallJumpCooldown += Time.deltaTime;
@@ -108,4 +108,12 @@ public class Movement : MonoBehaviour
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x,0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
+
+    public bool canAttack()
+    {
+        return horizontalInput == 0 && isGrounded() && !onWall();
+    }
+
+
+
 }
