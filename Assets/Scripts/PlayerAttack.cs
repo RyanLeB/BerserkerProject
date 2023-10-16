@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
             Invoke("DeactivateHitbox", 0.4f);
         }
 
-        if (Input.GetMouseButton(1) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if (Input.GetMouseButton(1) && cooldownTimer > attackCooldown)
         {
             HeavyAttack();
             Invoke("ActivateHeavHitbox", 0.3f);
