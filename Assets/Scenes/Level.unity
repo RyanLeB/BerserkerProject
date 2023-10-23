@@ -7800,7 +7800,7 @@ GameObject:
   - component: {fileID: 1224126347}
   - component: {fileID: 1224126348}
   m_Layer: 0
-  m_Name: BackToHUB
+  m_Name: LevelSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7875,10 +7875,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1224126344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160e88d581eca1c4a835818656def6b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 3256a84e079eb4a43add932f83fad09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: 
 --- !u!1 &1245688773
 GameObject:
   m_ObjectHideFlags: 0
@@ -7913,7 +7912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.03, y: -2.7}
+  m_AnchoredPosition: {x: 14.63, y: -2.7}
   m_SizeDelta: {x: 21.5678, y: 4.1557}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1245688775
@@ -7949,7 +7948,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Level Complete... \nThanks for playing\nUpdates Soon!"
+  m_Text: "Level Complete... \nHop in the rock to continue..."
 --- !u!222 &1245688776
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10382,7 +10381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'V0.5
+  m_Text: 'V0.6
 
 '
 --- !u!222 &2098333063
