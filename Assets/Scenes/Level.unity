@@ -5883,6 +5883,7 @@ GameObject:
   - component: {fileID: 1001053509}
   - component: {fileID: 1001053508}
   - component: {fileID: 1001053507}
+  - component: {fileID: 1001053514}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -6085,6 +6086,18 @@ Transform:
   - {fileID: 1556160752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001053514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001053506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dd6da83ed617424989fad5a7a8af1b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1089379232
 GameObject:
   m_ObjectHideFlags: 0
@@ -10369,7 +10382,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V0.3
+  m_Text: 'V0.4
+
+'
 --- !u!222 &2098333063
 CanvasRenderer:
   m_ObjectHideFlags: 0
