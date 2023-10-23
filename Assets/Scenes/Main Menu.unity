@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 650498204}
   - component: {fileID: 650498203}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Version
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V0.2
+  m_Text: V0.3
 --- !u!222 &650498204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2053,6 +2053,7 @@ GameObject:
   - component: {fileID: 1141306474}
   - component: {fileID: 1141306473}
   - component: {fileID: 1141306472}
+  - component: {fileID: 1141306475}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -2123,7 +2124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1141306473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1141306475}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: ExitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1141306473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2162,6 +2175,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141306470}
   m_CullTransparentMesh: 1
+--- !u!114 &1141306475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141306470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79758e7f9f15ab84f9c61a3131345111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1222925705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2642,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1234349604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1234349606}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: HUB World
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1234349604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,10 +2702,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1234349601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160e88d581eca1c4a835818656def6b9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c45df39ce0a5c24f9155dd964cdc52d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newLevel: 
 --- !u!1 &1276648829
 GameObject:
   m_ObjectHideFlags: 0
