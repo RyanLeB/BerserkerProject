@@ -7878,6 +7878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3256a84e079eb4a43add932f83fad09e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newLevel: 
 --- !u!1 &1245688773
 GameObject:
   m_ObjectHideFlags: 0
@@ -10381,7 +10382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'V0.6
+  m_Text: 'V0.7
 
 '
 --- !u!222 &2098333063
