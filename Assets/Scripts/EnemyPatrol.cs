@@ -61,9 +61,9 @@ public class EnemyPatrol : MonoBehaviour
     {
 
         anim.SetBool("run", false);
-        movingLeft = !movingLeft;
-        
         idleTimer += Time.deltaTime;
+        
+        
         if (idleTimer > idleDuration)
             movingLeft = !movingLeft;
 
