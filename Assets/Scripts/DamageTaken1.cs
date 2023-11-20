@@ -9,7 +9,7 @@ public class DamageTaken1 : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("FantasyLVL");
         }
     }
 }

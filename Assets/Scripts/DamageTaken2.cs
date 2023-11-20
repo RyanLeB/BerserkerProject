@@ -2,14 +2,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DamageTaken : MonoBehaviour
+public class ForestDamage : MonoBehaviour
 {
     [SerializeField] private string newLevel;
     void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("VillageLVL");
+            SceneManager.LoadScene("ForestLVL");
         }
     }
 }
