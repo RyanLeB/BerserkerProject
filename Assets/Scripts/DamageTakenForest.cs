@@ -3,10 +3,10 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class DamageTaken : MonoBehaviour
+public class DamageTakenForest : MonoBehaviour
 {
     [SerializeField] AudioSource hurtSFX;
-    
+
     static public int health = 3;
     public Text healthText;
 
@@ -17,8 +17,8 @@ public class DamageTaken : MonoBehaviour
             healthText.text = health.ToString();
 
         }
-        
-        
+
+
     }
 
 
@@ -31,26 +31,26 @@ public class DamageTaken : MonoBehaviour
 
 
 
-    
-    void OnTriggerEnter2D(Collider2D other) 
+
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             TakeDamage(1);
             hurtSFX.Play();
 
-            if(health == 0)
+            if (health == 0)
             {
-                
-                SceneManager.LoadScene("VillageLVL");
+
+                SceneManager.LoadScene("ForestLVL");
                 health = 3;
             }
         }
-        
-        
-        
-            
-          
-        
+
+
+
+
+
+
     }
 }
