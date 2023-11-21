@@ -12,6 +12,8 @@ public class PlayerAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private BoxCollider2D regHitbox;
     private BoxCollider2D heavyHitbox;
+    [SerializeField] private AudioSource LightAttackSFX;
+    [SerializeField] private AudioSource HeavyAttackSFX;
 
     private void Awake()
     {
@@ -44,6 +46,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetTrigger("attack");
         cooldownTimer = 0;
+        LightAttackSFX.Play();
     }
 
 
@@ -51,6 +54,7 @@ public class PlayerAttack : MonoBehaviour
     {
         anim.SetTrigger("heavyattack");
         cooldownTimer = 0;
+        HeavyAttackSFX.Play();
     }
 
     void ActivateHitbox()
