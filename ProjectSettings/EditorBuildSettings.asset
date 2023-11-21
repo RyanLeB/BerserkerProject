@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FantasyLVL.unity
     guid: 02f7467a48183ed40be40efc6bb430dc
+  - enabled: 1
+    path: Assets/Scenes/ForestLVL.unity
+    guid: 1c7280128aadd304d9a5a9738e7bb3ea
   m_configObjects: {}

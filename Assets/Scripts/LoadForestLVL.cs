@@ -1,14 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitcherLVL2 : MonoBehaviour
+public class SceneSwitcherLVL3 : MonoBehaviour
 {
     [SerializeField] private string newLevel;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("ForestLVL");
         }
     }
 }
