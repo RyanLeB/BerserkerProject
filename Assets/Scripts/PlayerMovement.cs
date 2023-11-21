@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
             }
             else
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 3, 6);
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 6, 10);
         }
             wallJumpCooldown = 0;
 
