@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Enemy
   - Teleport
+  - RegularSkele
+  - ShieldSkele
+  - SpearSkele
   layers:
   - Default
   - TransparentFX
