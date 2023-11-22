@@ -31,7 +31,6 @@ public class DamageTakenFantasy : MonoBehaviour
 
 
 
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -41,7 +40,8 @@ public class DamageTakenFantasy : MonoBehaviour
 
             if (health == 0)
             {
-
+                
+               
                 SceneManager.LoadScene("FantasyLVL");
                 health = 3;
             }
