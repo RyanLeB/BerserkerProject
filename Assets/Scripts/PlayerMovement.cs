@@ -50,12 +50,15 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
 
+        if (body.velocity.y < 0)
+        {
+            anim.SetTrigger("Fall");
+        }
 
 
-        
 
-            // wall jump
-            if (wallJumpCooldown > 0.2f)
+        // wall jump
+        if (wallJumpCooldown > 0.2f)
         {
             if (Input.GetKey(KeyCode.W))
                 Jump();
@@ -89,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
             
+            
         }
         else if (onWall() && !isGrounded())
         {
@@ -102,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
         }
             wallJumpCooldown = 0;
 
-
+        
     }
 
     
