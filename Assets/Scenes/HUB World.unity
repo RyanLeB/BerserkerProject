@@ -13762,7 +13762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6419675c7db4aa64781241ef56f05758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0.2
+  attackCooldown: 0.5
+  HeavyAttackCooldown: 0.7
   LightAttackSFX: {fileID: 1607828585}
   HeavyAttackSFX: {fileID: 1210850391}
 --- !u!95 &1452614845

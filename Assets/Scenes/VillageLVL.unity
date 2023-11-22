@@ -6307,6 +6307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 0.5
+  HeavyAttackCooldown: 0.7
   LightAttackSFX: {fileID: 805698726}
   HeavyAttackSFX: {fileID: 2257216}
 --- !u!95 &1001053508
