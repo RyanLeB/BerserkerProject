@@ -509,7 +509,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1122506780}
-  - {fileID: 923131636}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5028,14 +5027,14 @@ RectTransform:
   m_GameObject: {fileID: 923131635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3159106, y: 2.5872405, z: 1.2298231}
+  m_LocalScale: {x: 1.0960066, y: 1.2244138, z: 0.5820148}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 134084418}
+  m_Father: {fileID: 1122506780}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -347.82065, y: 183}
+  m_AnchoredPosition: {x: -104.97685, y: 6.1522675}
   m_SizeDelta: {x: 36.6107, y: 27.3068}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &923131637
@@ -6331,7 +6330,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 6934013284892070054, guid: 4e0fc7cde14ecc846b417aceac4ebf3c, type: 3}
+  m_Sprite: {fileID: -7500690451134026123, guid: 3f68469588d4a4246a11b7a3e2f0e552, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6963,7 +6962,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.113044, y: 2.113044, z: 2.113044}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 923131636}
   m_Father: {fileID: 134084418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -8367,7 +8367,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0f92ec2a0e7c36c49bfc6b4f6d8de560, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.17
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0

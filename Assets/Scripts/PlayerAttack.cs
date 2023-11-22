@@ -7,6 +7,10 @@ public class PlayerAttack : MonoBehaviour
 {
     
     [SerializeField] private float attackCooldown;
+    
+    [SerializeField] private float HeavyAttackCooldown;
+
+
     private Animator anim;
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
@@ -32,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
             Invoke("DeactivateHitbox", 0.4f);
         }
 
-        if (Input.GetMouseButton(1) && cooldownTimer > attackCooldown)
+        if (Input.GetMouseButton(1) && cooldownTimer > HeavyAttackCooldown)
         {
             HeavyAttack();
             Invoke("ActivateHeavHitbox", 0.325f);
