@@ -1,6 +1,7 @@
 
 
 using System.Diagnostics.CodeAnalysis;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -79,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             
             if (Input.GetKey(KeyCode.W))
                 Jump();
+            anim.SetTrigger("Fall");
         }
         else wallJumpCooldown += Time.deltaTime;
     }
@@ -86,15 +88,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        JumpSFX.Play();
+        
 
         if (isGrounded())
         {
             body.velocity = new Vector2(body.velocity.x, jumpPower);
             anim.SetTrigger("jump");
-            
-            
+            JumpSFX.Play();
+
         }
+        
         else if (onWall() && !isGrounded())
         {
             if (horizontalInput == 0)
@@ -104,12 +107,13 @@ public class PlayerMovement : MonoBehaviour
                 
             }
             else
-                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 6, 7);
-            
+                body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 5, 8);
+                anim.SetTrigger("jump");
+                JumpSFX.Play();
         }
             wallJumpCooldown = 0;
-
         
+
     }
 
     
