@@ -72,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
                 body.gravityScale = 0;
                 body.velocity = Vector2.zero;
                 GroundedSFX.Play();
+                anim.SetTrigger("jump");
             }
             else
                 body.gravityScale = 7;
@@ -100,9 +101,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 10, 0);
                 transform.localScale = new Vector3(-Mathf.Sign(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+                
             }
             else
                 body.velocity = new Vector2(-Mathf.Sign(transform.localScale.x) * 6, 7);
+            
         }
             wallJumpCooldown = 0;
 
