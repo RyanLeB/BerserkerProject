@@ -9983,6 +9983,7 @@ GameObject:
   - component: {fileID: 818916507}
   - component: {fileID: 818916509}
   - component: {fileID: 818916510}
+  - component: {fileID: 818916511}
   m_Layer: 0
   m_Name: RockCollider
   m_TagString: Untagged
@@ -10075,6 +10076,20 @@ PlayableDirector:
     value: {fileID: 2111878230}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &818916511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818916506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af3869a19568954439ac6483e5e949f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayTimeline: 0
+  triggerTimeline: {fileID: 818916510}
 --- !u!1 &821940811
 GameObject:
   m_ObjectHideFlags: 0
@@ -16973,7 +16988,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -21447,6 +21462,7 @@ MonoBehaviour:
   m_Events:
     m_Signals:
     - {fileID: 11400000, guid: 2139cb74ae6f8904c81bf73d8fe1dfcd, type: 2}
+    - {fileID: 0}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -21461,7 +21477,9 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
-          m_CallState: 2
+          m_CallState: 1
+    - m_PersistentCalls:
+        m_Calls: []
 --- !u!114 &2111878233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22102,7 +22120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2141203069
 Transform:
   m_ObjectHideFlags: 0
