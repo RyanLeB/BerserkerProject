@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MirrorLVL.unity
     guid: 5d691a5a9dad1d945928566f60be1b64
+  - enabled: 1
+    path: Assets/Scenes/BossLVL.unity
+    guid: 88d6b33b2e5f84c43bb475b21626f84e
   m_configObjects: {}

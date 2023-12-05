@@ -1,12 +1,13 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class DamageTakenMirror : MonoBehaviour
+public class DamageTakenBoss : MonoBehaviour
 {
     [SerializeField] AudioSource hurtSFX;
 
-    static public int health = 6;
+    static public int health = 100;
     public Text healthText;
 
     private void Update()
@@ -23,9 +24,10 @@ public class DamageTakenMirror : MonoBehaviour
 
 
 
-    static void TakeDamage(int damage)
+    private void TakeDamage(int damage)
     {
         health -= damage;
+        
     }
 
 
@@ -35,14 +37,14 @@ public class DamageTakenMirror : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TakeDamage(1);
+            TakeDamage(5);
             hurtSFX.Play();
 
             if (health == 0)
             {
 
-                SceneManager.LoadScene("MirrorLVL");
-                health = 3;
+                SceneManager.LoadScene("BossLVL");
+                health = 100;
             }
         }
 
