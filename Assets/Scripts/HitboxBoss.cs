@@ -29,7 +29,7 @@ public class HitboxBoss : MonoBehaviour
         {
 
             MonsterSFX.Play();
-            BossHealth -= 2;
+            BossHealth -= 1;
             
             if (BossHealth <= 0) 
             {
