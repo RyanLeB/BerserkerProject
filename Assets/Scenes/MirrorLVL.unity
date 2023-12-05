@@ -12561,7 +12561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1170632845}
   - component: {fileID: 1170632847}
-  - component: {fileID: 1170632846}
+  - component: {fileID: 1170632848}
   m_Layer: 0
   m_Name: RockCollider
   m_TagString: Untagged
@@ -12584,19 +12584,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 237268220}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1170632846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170632844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160e88d581eca1c4a835818656def6b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newLevel: 
 --- !u!61 &1170632847
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12642,6 +12629,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51507455, y: 0.8699844}
   m_EdgeRadius: 0
+--- !u!114 &1170632848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170632844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48dd704d04040f74a816302813b394ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newLevel: 
 --- !u!1 &1183525259
 GameObject:
   m_ObjectHideFlags: 0
@@ -21869,7 +21869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Can't light attack either hmm...
+  m_Text: Light attacks have no effect here, hmm...
 --- !u!222 &1983082498
 CanvasRenderer:
   m_ObjectHideFlags: 0

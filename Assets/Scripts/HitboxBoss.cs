@@ -9,7 +9,7 @@ public class HitboxBoss : MonoBehaviour
 
     public GameObject rock;
     public Text healthText;
-
+    public GameObject canvas;
     private void Update()
     {
         if (healthText != null)
@@ -35,7 +35,7 @@ public class HitboxBoss : MonoBehaviour
             {
                 // Damage or destroy the enemy.
                 Destroy(collision.gameObject);
-                
+                canvas.SetActive(true);
                 rock.SetActive(true);
             }
             
