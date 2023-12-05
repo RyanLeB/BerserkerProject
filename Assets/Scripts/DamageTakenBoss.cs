@@ -46,7 +46,7 @@ public class DamageTakenBoss : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TakeDamage(1);
+            TakeDamage(2);
             
 
             if (health == 0)
