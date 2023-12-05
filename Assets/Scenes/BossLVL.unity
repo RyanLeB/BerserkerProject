@@ -4312,6 +4312,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &594871453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2183321564951531335, guid: 367acab6b4839d34f847dc791e026c4d, type: 3}
+  m_PrefabInstance: {fileID: 1769407148}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &599092025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,6 +8269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BossHealth: 20
   MonsterSFX: {fileID: 1522706003}
+  rock: {fileID: 594871453}
   healthText: {fileID: 458715192}
 --- !u!1 &1209847492
 GameObject:
@@ -12937,8 +12943,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1417796963}
   - component: {fileID: 1417796966}
-  - component: {fileID: 1417796965}
-  - component: {fileID: 1417796964}
+  - component: {fileID: 1417796967}
+  - component: {fileID: 1417796968}
   m_Layer: 0
   m_Name: RockCollider
   m_TagString: Untagged
@@ -12961,55 +12967,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1769407149}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1417796964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417796962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af3869a19568954439ac6483e5e949f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayTimeline: 0
-  triggerTimeline: {fileID: 1417796965}
---- !u!320 &1417796965
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1417796962}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 1098845289651921918, guid: 9624f4a662d49f04b94236a2ae9968f9, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -4006780118088008895, guid: 9624f4a662d49f04b94236a2ae9968f9, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 7084649729182726054, guid: 9624f4a662d49f04b94236a2ae9968f9, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -3141136404606065732, guid: 9624f4a662d49f04b94236a2ae9968f9, type: 2}
-    value: {fileID: 95608090}
-  - key: {fileID: 1098845289651921918, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-    value: {fileID: 525729395}
-  - key: {fileID: -4006780118088008895, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 7084649729182726054, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -3141136404606065732, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -6295769582645231380, guid: 3fa0480f8a0c4724c9e4ff8c9fffdef7, type: 2}
-    value: {fileID: 2137810813}
-  m_ExposedReferences:
-    m_References: []
 --- !u!61 &1417796966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13055,6 +13012,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51507455, y: 0.8699844}
   m_EdgeRadius: 0
+--- !u!114 &1417796967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417796962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160e88d581eca1c4a835818656def6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newLevel: 
+--- !u!320 &1417796968
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417796962}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: c3cd7997839fe3a4482a4cc707f40cc4, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings: []
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1420603416
 GameObject:
   m_ObjectHideFlags: 0
@@ -17937,7 +17924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2183321564951531335, guid: 367acab6b4839d34f847dc791e026c4d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2319273174036298326, guid: 367acab6b4839d34f847dc791e026c4d, type: 3}
       propertyPath: m_Layer

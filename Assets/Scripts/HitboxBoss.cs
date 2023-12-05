@@ -7,6 +7,7 @@ public class HitboxBoss : MonoBehaviour
     public int BossHealth = 20;
     public AudioSource MonsterSFX;
 
+    public GameObject rock;
     public Text healthText;
 
     private void Update()
@@ -34,7 +35,8 @@ public class HitboxBoss : MonoBehaviour
             {
                 // Damage or destroy the enemy.
                 Destroy(collision.gameObject);
-            
+                
+                rock.SetActive(true);
             }
             
         }
