@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,8 +8,12 @@ public class DamageTakenMirror : MonoBehaviour
     [SerializeField] AudioSource hurtSFX;
 
     static public int health = 20;
-    public Text healthText;
+    [SerializeField] private Text healthText;
+    [SerializeField] private float timestamp = 0f;
+    [SerializeField] private float delay = 1f;
+    
 
+    
     private void Update()
     {
         if (healthText != null)
@@ -23,20 +28,26 @@ public class DamageTakenMirror : MonoBehaviour
 
 
 
-    static void TakeDamage(int damage)
+    private void TakeDamage(int damage)
     {
-        health -= damage;
+        if (Time.time > timestamp + delay)
+        {
+            hurtSFX.Play();
+            health -= damage;
+            timestamp = Time.time;
+        }
+        
     }
 
 
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            TakeDamage(1);
-            hurtSFX.Play();
+            TakeDamage(2);
+            
 
             if (health == 0)
             {
