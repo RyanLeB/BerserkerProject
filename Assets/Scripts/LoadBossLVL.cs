@@ -4,8 +4,13 @@ using UnityEngine.SceneManagement;
 public class LoadBossLVL : MonoBehaviour
 {
     [SerializeField] private string newLevel;
-    public void LoadLVL()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("BossLVL");
+        if (other.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("BossLVL");
+
+        }
+        
     }
 }
