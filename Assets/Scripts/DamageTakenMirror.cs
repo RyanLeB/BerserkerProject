@@ -6,7 +6,7 @@ public class DamageTakenMirror : MonoBehaviour
 {
     [SerializeField] AudioSource hurtSFX;
 
-    static public int health = 6;
+    static public int health = 20;
     public Text healthText;
 
     private void Update()
@@ -42,7 +42,7 @@ public class DamageTakenMirror : MonoBehaviour
             {
 
                 SceneManager.LoadScene("MirrorLVL");
-                health = 3;
+                health = 20;
             }
         }
 
