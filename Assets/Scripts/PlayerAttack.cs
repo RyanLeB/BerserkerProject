@@ -13,6 +13,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
+    
     private BoxCollider2D regHitbox;
     private BoxCollider2D heavyHitbox;
     [SerializeField] private AudioSource LightAttackSFX;
@@ -24,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
         regHitbox = transform.Find("RegHitbox").GetComponent<BoxCollider2D>();
         heavyHitbox = transform.Find("HeavyHitbox").GetComponent <BoxCollider2D>();
+        
     }
 
     private void Update()
