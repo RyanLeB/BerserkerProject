@@ -3,6 +3,9 @@
 
 2D Platformer I'm working on for a project, just using this to keep track of progression and backups
 
+## Trailer
+https://www.youtube.com/watch?v=sH6MmXsZnfA
+
 ## Youtube videos
 https://www.youtube.com/watch?v=nxjw4ahMD68&
  
